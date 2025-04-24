@@ -6,22 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="resultado"></div>
+    <div id="resultado" style="color: red;"></div>
 
-    <div id="resultado1"></div>
+    <button onclick="javascript: cambiar()">Cambiar texto</button>
 
-    <div id="resultado2"></div>
 
     <script>
-        var valores=[1,2,3,4,5,6,7,8,9,10];
-        var resultado=valores[0]+valores[2]+valores[4]+valores[6]+valores[8];
-        document.getElementById('resultado').innerHTML="Resultado: "+resultado;
-
-        var resultado=valores[1]+valores[3]+valores[5]+valores[7]+valores[9];
-        document.getElementById('resultado1').innerHTML="Resultado1: "+resultado;
-
-        var resultado=valores[4] +valores[9];
-        document.getElementById('resultado2').innerHTML="Resultado2: "+resultado;
+        function cambiar()
+        {
+            document.getElementById("resultado").innerHTML="El texto cambio por seleccionar el botón"
+        }
 
     </script>
 </body>
